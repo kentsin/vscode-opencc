@@ -65,7 +65,7 @@ function getClipboardData(callback: (text:string) => void)
 }
 
 
-function pasteSpecial()
+function pasteOpencc()
 {
 	const editor = vscode.window.activeTextEditor;
 	if (editor) {

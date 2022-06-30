@@ -1,5 +1,5 @@
 {
-	"name": "pastespecial",
+	"name": "opencc",
 	"displayName": "%displayName%",
 	"description": "%description%",
 	"version": "0.9.1",
@@ -16,11 +16,11 @@
 		"theme": "dark"
 	},
 	"keywords": [
-		"paste",
-		"paste special",
-		"paste as",
+		"opencc",
+		"paste OpenCC",
+		"opencc convert",
 		"clipboard",
-		"formats"
+		"Chinese"
 	],
 	"engines": {
 		"vscode": "^1.40.0"
@@ -30,20 +30,20 @@
 	],
 	"activationEvents": [
 		"*",
-		"onCommand:extension.pastespecial"
+		"onCommand:extension.pasteOpencc"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.pastespecial",
-				"title": "Paste Special..."
+				"command": "extension.pasteOpencc",
+				"title": "Paste Opencc..."
 			}
 		],
 		"menus": {
       "editor/context": [
         {
-          "command": "extension.pastespecial",
+          "command": "extension.pasteOpencc",
           "group": "9_cutcopypaste@4",
 					"when": "editorTextFocus"
         }
@@ -51,7 +51,7 @@
 		},
 		"keybindings": [
       {
-        "command": "extension.pastespecial",
+        "command": "extension.pasteOpencc",
         "key": "alt+ctrl+V",
         "win": "alt+ctrl+V",
         "linux": "shift+ctrl+V",
