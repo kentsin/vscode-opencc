@@ -107,7 +107,7 @@ export function activate(context: vscode.ExtensionContext)
 {
 	install();
 	let disposable = vscode.commands.registerCommand('extension.pastespecial', () => {
-		pasteSpecial();
+		pasteOpencc();
 	});
 	context.subscriptions.push(disposable);
 }
